@@ -22,7 +22,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp GRAVE
    &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LCMD &kp LCTRL &kp SPACE   &kp RET &kp BSPC &kp DEL
+                  &kp LCMD &kp LCTRL &kp SPACE   &kp RET &kp BSPC &kp RSHFT(EL)
                         >;
                 };
                 lower_layer {
@@ -52,5 +52,20 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+        };
+
+        combos {
+            compatible = "zmk,combos";
+            combo_copy {
+                timeout-ms = <50>;
+                key-positions = <c v>;
+                bindings = <&kp LCTRL(c)>
+            };
+
+            combo_paste {
+                timeout-ms = <50>;
+                key-positions = <v b>;
+                bindings = <&kp LCTRL(v)>
+            };
         };
 };
