@@ -28,8 +28,6 @@
 #define M_DOWN &mmv MOVE_DOWN
 #define M_LEFT &mmv MOVE_LEFT
 #define M_RIGHT &mmv MOVE_RIGHT
-#define SCRL_UP &msc SCRL_UP
-#define SCRL_DOWN &msc SCRL_DOWN
 
 
 / {
@@ -85,9 +83,9 @@
 //,--------|--------|--------|------|-------|--------|              |-------|--------|--------|--------|--------|---------|
    &none     &none    &none    M_UP   &none   &none                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
 //,--------|---------|---------|--------|--------|--------|              |-------|--------|--------|--------|--------|---------|
-   &none     SCRL_UP    M_LEFT   M_DOWN   M_RIGHT  &none                  &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
+   &none    &msc SCRL_UP    M_LEFT   M_DOWN   M_RIGHT  &none                  &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
 //,--------- |-----------|--------|---------|----------|--------|              |-------|--------|--------|--------|--------|---------|
-   &kp LSHFT   SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &none                  &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &none
+   &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &none                  &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &none
 //,-----------------------------------------------------|                    |-----------------------------------------------------|
                                  &kp LGUI  &kp LCTRL  &trans        &kp RET  &trans   &none
                         >;
