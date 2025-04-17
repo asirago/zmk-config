@@ -102,10 +102,10 @@
                         bindings = <
 //,--------|--------|--------|------|-------|--------|              |-------|--------|--------|--------|--------|---------|
    &none     &none    &none    M_UP   &none   &none                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
-//,--------|---------|---------|--------|--------|--------|              |-------|--------|--------|--------|--------|---------|
-   &none    &msc SCRL_UP    M_LEFT   M_DOWN   M_RIGHT  &none                  &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
-//,--------- |-----------|--------|---------|----------|--------|              |-------|--------|--------|--------|--------|---------|
-   &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &none                  &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &none
+//,------|---------------|--------|--------|---------|------|       |---------|----------|--------|-----------|----------|---------|
+   &none    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &none         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
+//,--------- |-----------|--------|---------|----------|--------|   |-------|--------|--------|--------|--------|---------|
+   &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &none   &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &none
 //,-----------------------------------------------------|                    |-----------------------------------------------------|
                                  &kp LGUI  &kp LCTRL  &trans        &kp RET  &trans   &none
                         >;
