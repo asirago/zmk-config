@@ -73,7 +73,7 @@
                 bindings = <&kp LC(LS(S))>;
                 slow-release;
                 layers = <0>;
-            }
+            };
         };
 };
 
