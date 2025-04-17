@@ -14,7 +14,7 @@
 
 
 #define OPT_ESC &mt LALT ESC
-#define NAV_BSPC &mt NAV BSPC 
+#define NAV_BSPC &lt NAV BSPC 
 #define RSHFT_DEL &mt RSFHT DEL 
 #define SYM_SPACE &lt SYM SPACE
 
@@ -45,7 +45,7 @@
 //,----------|-------|-------|-------|-------|----------|              |------|-------|-----------|---------|--------  |---------|
    &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                    &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH   &mo 3 
                       //,-----------|-----------|------------|     |--------|----------|-----------|
-                          &kp LCMD   &kp LCTRL   SYM_SPACE          &kp RET   NAV_BSPC   RSHFT_DEL
+                          &kp LCMD   &kp LCTRL  SYM_SPACE           &kp RET   NAV_BSPC   RSHFT_DEL
                         >;
                 };
                 symbols {
