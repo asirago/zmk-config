@@ -10,13 +10,12 @@
 #include <dt-bindings/zmk/pointing.h>
 
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #define DEF 0
 #define SYM 1
 #define NAV 2
-
 
 #define OPT_ESC &mt LALT ESC
 #define NAV_BSPC &lt NAV BSPC 
@@ -109,6 +108,10 @@
                         >;
                 };
         };
+
+};
+
+/ {
 
         combos {
             compatible = "zmk,combos";
