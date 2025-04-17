@@ -15,7 +15,7 @@
 
 #define OPT_ESC &mt LALT ESC
 #define NAV_BSPC &lt NAV BSPC 
-#define RSHFT_DEL &mt RSFHT DEL 
+#define RSHFT_DEL &mt RSHFT DEL 
 #define SYM_SPACE &lt SYM SPACE
 
 // Mouse Movements
