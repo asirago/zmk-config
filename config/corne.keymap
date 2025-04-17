@@ -43,7 +43,7 @@
             combo_paste {
                 timeout-ms = <50>;
                 key-positions = <23 24>;
-                bindings = <&kp Z>
+                bindings = <&kp Z>;
                 slow-release;
                 layers = <0 1>;
             };
