@@ -77,7 +77,7 @@
 //,--------|--------|--------|--------|--------|--------|              |-------|--------|--------|--------|--------|---------|
    &none   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5                   &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
 //,--------|--------|--------|--------|--------|--------|              |-------|--------|--------|--------|--------|---------|
-   &kp LSHFT &kp N6   &kp N7   &kp N8   &kp N9   &kp N0                 &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &none
+   &kp LSHFT &kp N6   &kp N7   &kp N8   &kp N9   &kp N0                 &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp BSLH   &trans
 //,-----------------------------------------------------|                    |-----------------------------------------------------|
                                  &kp LGUI  &kp LCTRL  &trans        &kp RET  &trans   &none
                         >;
