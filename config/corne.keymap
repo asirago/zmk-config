@@ -19,7 +19,7 @@
 #define DEF 0
 #define SYM 1
 #define NAV 2
-#define FUN 3
+#define FN 3
 #define MED 4
 #define SWE 5
 
@@ -27,6 +27,7 @@
 #define NAV_BSPC &lt NAV BSPC 
 #define RSHFT_DEL &mt RSHFT DEL 
 #define SYM_SPACE &lt SYM SPACE
+#define FN_RET &lt FN RET
 
 // Mouse Movements
 #define M_UP &mmv MOVE_UP
@@ -104,7 +105,7 @@
 // --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- |--------- | --------- |
    &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH    &mo MED 
                    // | -------- | --------- | --------- |    | ------- | -------- | --------- |
-                        &kp LCMD   &kp LCTRL   SYM_SPACE        &kp RET   NAV_BSPC   RSHFT_DEL
+                        &kp LCMD   &kp LCTRL   SYM_SPACE         FN_RET   NAV_BSPC   RSHFT_DEL
                         >;
                 };
 
@@ -140,7 +141,7 @@
                         display-name = "FN";
                         bindings = <
 // --------- | -------- | ------ | -------- | -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
-     &none       &none    &none     &none      &none       &none              &kp CARET   &kp AMPS    &kp LPAR   &kp RPAR   &kp STAR    &kp PIPE
+     &tog 5     &none    &none     &none      &none       &none              &kp CARET   &kp AMPS    &kp LPAR   &kp RPAR   &kp STAR    &kp PIPE
 // --------- | -------- | ------ | ---------| -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
      &none      &kp F1    &kp F2    &kp F3     &kp F4     &kp F5              &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
 // --------- | -------- | ------ | -------- | -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
