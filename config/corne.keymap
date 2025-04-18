@@ -17,11 +17,11 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
 #define DEF 0
-#define SYM 1
-#define NAV 2
-#define FN 3
-#define MED 4
-#define SWE 5
+#define SWE 1
+#define SYM 2
+#define NAV 3
+#define FN 4
+#define MED 5
 
 #define OPT_ESC &mt LALT ESC
 #define NAV_BSPC &lt NAV BSPC 
@@ -109,6 +109,20 @@
                         >;
                 };
 
+                swedish {
+                        display-name = "SWEDEN";
+                        bindings = <
+// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- | -------- | --------- |
+    &kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                &kp Y   &kp U     &kp I      &kp O      &kp P     &sv_ao
+// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- | -------- | --------- |
+    OPT_ESC    &kp A   &kp S   &kp D   &kp F   &kp G                &kp H   &kp J     &kp K      &kp L     &sv_oe     &sv_ae 
+// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- |--------- | --------- |
+   &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH    &tog SWE 
+                   // | -------- | --------- | --------- |    | ------- | -------- | --------- |
+                        &kp LCMD   &kp LCTRL   SYM_SPACE        &kp RET   NAV_BSPC   RSHFT_DEL
+                        >;
+                };
+
                 symbols {
                         display-name = "SYMBOLS";
                         bindings = <
@@ -141,11 +155,11 @@
                         display-name = "FN";
                         bindings = <
 // --------- | -------- | ------ | -------- | -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
-     &tog 5     &none    &none     &none      &none       &none              &kp CARET   &kp AMPS    &kp LPAR   &kp RPAR   &kp STAR    &kp PIPE
+    &tog SWE     &none    &none     &none      &none       &none              &kp CARET   &kp AMPS    &kp LPAR   &kp RPAR   &kp STAR    &kp PIPE
 // --------- | -------- | ------ | ---------| -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
-     &none      &kp F1    &kp F2    &kp F3     &kp F4     &kp F5              &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
+     &none     &kp F1    &kp F2    &kp F3     &kp F4     &kp F5              &kp MINUS   &kp EQUAL   &kp LBKT   &kp RBKT   &kp COLON   &kp DQT
 // --------- | -------- | ------ | -------- | -------- | --------- |        | --------- | --------- | -------- | -------- | --------- | -------- |
-     &none      &kp F6    &kp F7    &kp F8     &kp F9     &kp F10              &kp UNDER   &kp PLUS    &kp LBRC   &kp RBRC   &kp BSLH    &none
+     &none     &kp F6    &kp F7    &kp F8     &kp F9     &kp F10              &kp UNDER   &kp PLUS    &kp LBRC   &kp RBRC   &kp BSLH    &none
                                   // | -------- | --------- | ------ |    | ------- | ------ | ----- |
                                        &kp LGUI   &kp LCTRL   &trans        &kp RET   &trans   &none
                         >;
@@ -162,20 +176,6 @@
      &none      &kp F6    &kp F7    &kp F8     &kp F9     &kp F10               &none     &kp C_MUTE   &kp C_VOL_DN   &kp C_VOL_UP    &kp F13     &trans
                                   // | -------- | --------- | ------ |    | ------- | ------ | ----- |
                                        &kp LGUI   &kp LCTRL   &trans        &kp RET   &trans   &none
-                        >;
-                };
-
-                swedish {
-                        display-name = "SWEDEN";
-                        bindings = <
-// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- | -------- | --------- |
-    &kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                &kp Y   &kp U     &kp I      &kp O      &kp P     &sv_ao
-// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- | -------- | --------- |
-    OPT_ESC    &kp A   &kp S   &kp D   &kp F   &kp G                &kp H   &kp J     &kp K      &kp L     &sv_oe     &sv_ae 
-// --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- |--------- | --------- |
-   &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH    &tog 5 
-                   // | -------- | --------- | --------- |    | ------- | -------- | --------- |
-                        &kp LCMD   &kp LCTRL   SYM_SPACE        &kp RET   NAV_BSPC   RSHFT_DEL
                         >;
                 };
         };
