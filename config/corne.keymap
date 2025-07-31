@@ -119,7 +119,7 @@
 // --------- | ----- | ----- | ----- | ----- | ----- |            | ----- | ----- | --------- | ------- |--------- | --------- |
    &kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B                &kp N   &kp M   &kp COMMA   &kp DOT   &kp FSLH    &tog SWE 
                    // | -------- | --------- | --------- |    | ------- | -------- | --------- |
-                        &kp LCMD   &kp LCTRL   SYM_SPACE        &kp RET   NAV_BSPC   RSHFT_DEL
+                        &kp LCMD   &kp LCTRL   SYM_SPACE        FN_RET    NAV_BSPC   RSHFT_DEL
                         >;
                 };
 
@@ -141,11 +141,11 @@
                         display-name = "NAV";
                         bindings = <
 //,--------|--------|--------|------|-------|--------|              |-------|--------|--------|--------|--------|---------|
-   &none     &none    &none    M_UP   &none   &none                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
+   &none     &none    &none    M_UP   &none   &kp LCMD(EQUAL)                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
 //,------|---------------|--------|--------|---------|------|       |---------|----------|--------|-----------|----------|---------|
-   &none    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &none         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
+   &none    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &kp LCMD(MINUS)         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
 //,--------- |---------------|-------|----------|----------|------|  |-------|--------|--------|--------|--------|---------|
-   &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &none   &sv_ae    &sv_ao   &sv_oe   &none &none  &none
+   &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &kp LCMD(PLUS)   &sv_ae    &sv_ao   &sv_oe   &none &none  &none
 //,-----------------------------------------------------|                    |-----------------------------------------------------|
                                  &kp LGUI  &kp LCTRL  &trans        &kp RET  &trans   &none
                         >;
