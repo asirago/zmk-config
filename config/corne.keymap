@@ -141,7 +141,7 @@
                         display-name = "NAV";
                         bindings = <
 //,--------|--------|--------|------|-------|--------|              |-------|--------|--------|--------|--------|---------|
-   &none     &none    &none    M_UP   &none   &kp LG(EQUAL)                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
+   &none     &none    &none    M_UP   &none   &kp LG(N0)                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
 //,------|---------------|--------|--------|---------|------|       |---------|----------|--------|-----------|----------|---------|
    &none    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &kp LG(MINUS)         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
 //,--------- |---------------|-------|----------|----------|------|  |-------|--------|--------|--------|--------|---------|
