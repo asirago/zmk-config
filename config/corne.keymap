@@ -143,7 +143,7 @@
 //,--------|--------|--------|------|-------|--------|              |-------|--------|--------|--------|--------|---------|
    &none     &none    &none    M_UP   &none   &kp LG(N0)                  &kp CARET   &kp AMPS   &kp LPAR   &kp RPAR   &kp STAR   &kp PIPE
 //,------|---------------|--------|--------|---------|------|       |---------|----------|--------|-----------|----------|---------|
-   &none    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &kp LG(MINUS)         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
+   OPT_ESC    &msc SCRL_UP   M_LEFT   M_DOWN   M_RIGHT   &kp LG(MINUS)         &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp HOME   &kp END
 //,--------- |---------------|-------|----------|----------|------|  |-------|--------|--------|--------|--------|---------|
    &kp LSHFT  &msc SCRL_DOWN   &none   &mkp MB2   &mkp MB1   &kp LG(PLUS)   &sv_ae    &sv_ao   &sv_oe   &none &none  &none
 //,-----------------------------------------------------|                    |-----------------------------------------------------|
