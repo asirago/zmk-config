@@ -70,7 +70,7 @@
                 key-positions = <27 28>;
                 bindings = <&kp LG(C)>;
                 slow-release;
-                layers = <0>;
+                layers = <0 1>;
             };
 
             combo_paste {
@@ -78,7 +78,7 @@
                 key-positions = <28 29>;
                 bindings = <&kp LG(V)>;
                 slow-release;
-                layers = <0>;
+                layers = <0 1>;
             };
 
             combo_screenshot {
@@ -86,7 +86,7 @@
                 key-positions = <13 14 15>;
                 bindings = <&kp LC(LS(S))>;
                 slow-release;
-                layers = <0>;
+                layers = <0 1>;
             };
         };
 };
