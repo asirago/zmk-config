@@ -4,8 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
+// #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/behaviors.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -23,7 +24,7 @@
 #define FN 4
 #define MED 5
 
-// #define OPT_ESC &mt LALT ESC
+#define OPT_ESC &mt LALT ESC
 #define NAV_BSPC &lt NAV BSPC 
 #define RSHFT_DEL &mt RSHFT DEL 
 #define SYM_SPACE &lt SYM SPACE
@@ -63,7 +64,7 @@
 
 / {
     behaviors {
-        mt: OPT_ESC {
+        mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
