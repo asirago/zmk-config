@@ -23,7 +23,7 @@
 #define FN 4
 #define MED 5
 
-#define OPT_ESC &mt LALT ESC
+// #define OPT_ESC &mt LALT ESC
 #define NAV_BSPC &lt NAV BSPC 
 #define RSHFT_DEL &mt RSHFT DEL 
 #define SYM_SPACE &lt SYM SPACE
@@ -59,6 +59,18 @@
         macros {
 
         };
+};
+
+/ {
+    behaviors {
+        OPT_ESC: OPT_ESC {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            quick_tap_ms = <200>;
+            bindings = <&kp ESC>, <&kp LALT>;
+        };
+    };
 };
 
 / {
