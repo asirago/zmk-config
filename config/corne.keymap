@@ -67,7 +67,7 @@
             compatible = "zmk,behavior-mod-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            quick_tap_ms = <200>;
+            quick-tap-ms = <200>;
             bindings = <&kp ESC>, <&kp LALT>;
         };
     };
