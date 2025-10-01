@@ -63,7 +63,7 @@
 };
 
 &mt {
-    flavor = "tap-preferred":
+    flavor = "tap-preferred";
 };
 
 // / {
