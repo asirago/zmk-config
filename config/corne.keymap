@@ -62,6 +62,10 @@
         };
 };
 
+& mt {
+    flavor: "tap-preferred":
+};
+
 // / {
 //     behaviors {
 //         mt: mod_tap {
