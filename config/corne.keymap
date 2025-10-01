@@ -63,12 +63,13 @@
 
 / {
     behaviors {
-        OPT_ESC: OPT_ESC {
-            compatible = "zmk,behavior-mod-tap";
+        mt: OPT_ESC {
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             quick-tap-ms = <200>;
             bindings = <&kp ESC>, <&kp LALT>;
+            display-name = "Mod-Tap";
         };
     };
 };
